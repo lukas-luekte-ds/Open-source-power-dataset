@@ -66,7 +66,7 @@ class ForecastingDataset:
                 continue
             if not os.path.exists(os.path.join(self.data_folder, file.split('.')[0]+'2018.csv')):
                 self.processing(file)
-            break
+    
 
     def processing(self, file):
         data = pd.read_csv(os.path.join(self.raw_data_folder, file))
