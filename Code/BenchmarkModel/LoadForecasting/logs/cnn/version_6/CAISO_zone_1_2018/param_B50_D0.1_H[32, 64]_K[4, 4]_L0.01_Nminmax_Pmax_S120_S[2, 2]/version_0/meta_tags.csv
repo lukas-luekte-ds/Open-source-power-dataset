@@ -1,0 +1,34 @@
+key,value
+file,/media/lll/T9/PSML/processed_dataset/forecasting/CAISO_zone_1_2018.csv
+param_dict/batch_size,50
+param_dict/dropout,0.1
+param_dict/hidden_layers,"[32, 64]"
+param_dict/kernel_size,"[4, 4]"
+param_dict/learning_rate,0.01
+param_dict/normalization,minmax
+param_dict/pooling,max
+param_dict/sliding_window,120
+param_dict/stride,"[2, 2]"
+config/model_params/model_name,cnn
+config/model_params/dropout,[0.1]
+config/model_params/hidden_layers,"[[32, 64]]"
+config/model_params/kernel_size,"[[4, 4]]"
+config/model_params/stride,"[[2, 2]]"
+config/model_params/pooling,['max']
+config/exp_params/sliding_window,[120]
+config/exp_params/selection_metric,RMSE
+config/exp_params/train_valid_ratio,0.9
+config/exp_params/external_features,"['month_day', 'weekday', 'holiday', 'DHI', 'DNI', 'GHI', 'Dew Point', 'Solar Zenith Angle', 'Wind Speed', 'Relative Humidity', 'Temperature']"
+config/exp_params/test_flag,False
+config/exp_params/last_version,4
+config/exp_params/batch_size,[50]
+config/exp_params/learning_rate,[0.01]
+config/exp_params/num_workers,0
+config/exp_params/normalization,['minmax']
+config/exp_params/prediction_interval,0.95
+config/exp_params/data_folder,/media/lll/T9/PSML/processed_dataset/forecasting
+config/trainer_params/max_epochs,2
+config/trainer_params/gpus,1
+config/logging_params/save_dir,./../logs
+config/logging_params/name,cnn
+config/logging_params/manual_seed,0
