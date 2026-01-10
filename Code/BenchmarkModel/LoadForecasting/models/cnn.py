@@ -249,7 +249,7 @@ def grid_search_cnn(config, num_files):
     config['exp_params']['prediction_path'] = evaluate_config['exp_params']['prediction_path']
     config['exp_params']['prediction_interval'] = evaluate_config['exp_params']['prediction_interval']
 
-    run_evaluate_V3(config=config, verbose=False)
+    run_evaluate_V3(config=config, verbose=True)
     return
 
 
