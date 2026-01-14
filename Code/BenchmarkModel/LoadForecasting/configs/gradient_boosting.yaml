@@ -18,7 +18,7 @@ exp_params:
 
   prediction_interval: 0.95
 
-  data_folder: '../../../../PSML/processed_datasets/forecasting'
+  data_folder: '/media/lll/T9/PSML/processed_dataset/forecasting'
 
 trainer_params:
 

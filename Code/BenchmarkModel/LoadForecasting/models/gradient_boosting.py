@@ -93,7 +93,11 @@ def grid_search_gradient_boosting(config, num_files):
             'prediction_interval': config['exp_params']['prediction_interval'],
         }
     }
-    run_evaluate_V3(config=evaluate_config, verbose=False)
+
+    config['exp_params']['prediction_path'] = evaluate_config['exp_params']['prediction_path']
+    config['exp_params']['prediction_interval'] = evaluate_config['exp_params']['prediction_interval']
+
+    run_evaluate_V3(config=config, verbose=True)
     return
 
 
