@@ -1,2 +1,6 @@
 .ipynb_checkpoints/
 __pycache__/
+Code/BenchmarkModel/LoadForecasting/logs/
+Code/BenchmarkModel/LoadForecasting/**/logs/
+Code/BenchmarkModel/LoadForecasting/**/version_*/
+Code/BenchmarkModel/LoadForecasting/**/tf/
