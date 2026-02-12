@@ -45,8 +45,8 @@ def grid_search_linear_regression(config, num_files):
 
     data_folder = config['exp_params']['data_folder']
 
-    # file_list = sorted([i for i in os.listdir(data_folder) if 'zone' in i and i.endswith('.csv')])[:num_files]
-    file_list = sorted([i for i in os.listdir(data_folder) if 'zone' in i and i.endswith('.csv')])[2:3]
+    file_list = sorted([i for i in os.listdir(data_folder) if 'zone' in i and i.endswith('.csv')])[:num_files]
+    #file_list = sorted([i for i in os.listdir(data_folder) if 'zone' in i and i.endswith('.csv')])[2:3]
     param_grid = {
         'sliding_window': config['exp_params']['sliding_window'],
         'variate': config['exp_params']['variate'],
